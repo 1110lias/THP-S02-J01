@@ -5,6 +5,7 @@ print ">"
 user_name = gets.chomp
 puts "Nice meeting you #{user_name} !"
 puts "error 12: l04: class interrupted by user - format unacceptable please correct the address #1Ec12 001010010 101110 10010 100 10 111 011111 00000"
+print ">" 
 random_info = gets.chomp
 puts "Je plaisantais! Il n'y a pas d'erreur! Haha ! ''#{random_info}'' Et puis d'abord ça ne veut rien dire dans ce context! "
 puts "donne moi plutot ton année de naissance"
@@ -28,20 +29,17 @@ puts "Donne moi un chiffre entre -100 et 100"
 print ">"
 nb_choisi = gets.chomp.to_i
 until nb_choisi >= -100 && nb_choisi <= 100
-  puts "T'es sérieux.se mec.uf ? La consigne est pourtant claire. Recommence :"
+  puts "T'es sérieux.se mec.uf ? La consigne est pourtant claire! Recommence :"
   puts "Donne moi un chiffre entre -100 et 100"
   print ">" 
   nb_choisi = gets.chomp.to_i
 end
 formatted_ytl = sprintf("%.2f",72.6 - year_now + user_bdy)
-
 nb_choisi.times do |i|
   puts "T'inquiète pas, ça va bien se passer il te reste environ #{formatted_ytl } années a vivre! (itération N°#{i+1})"
   sleep 0.2
 end
-
 u = 0
-
 if nb_choisi < 0 
     until u == nb_choisi 
         print "#{u} "
@@ -57,12 +55,5 @@ else nb_choisi >0
         sleep 0.2
     end
 end
-
 puts ""
 puts "C'est fini!"
-
-
-
- 
- 
-
